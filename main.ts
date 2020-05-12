@@ -1,5 +1,5 @@
-//% weight=10 color=#008B00 icon="\uf136"
-namespace i2c_motor_shield {
+//% color=#008B00
+namespace basic {
     //% block
     export function I2CmotorRun (chanel: number, speed: number): void {
         let buf = pins.createBuffer(3);
