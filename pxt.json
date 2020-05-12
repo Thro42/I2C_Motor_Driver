@@ -1,23 +1,15 @@
 {
-    "name": "i2c_motor_driver",
-    "version": "0.0.0",
-    "description": "",
-    "dependencies": {
-        "core": "*",
-        "radio": "*",
-        "i2c_motor_driver": "github:thro42/i2c_motor_driver#master"
-    },
-    "files": [
-        "README.md",
-        "main.blocks",
-        "main.ts"
-    ],
-    "testFiles": [
-        "test.ts"
-    ],
-    "public": true,
-    "supportedTargets": [
-        "calliopemini"
-    ],
-    "preferredEditor": "tsprj"
+  "name": "i2c_motor_driver",
+  "version": "0.0.0",
+  "description": "",
+  "dependencies": {
+    "core": "*",
+    "radio": "*",
+    "i2c_motor_driver": "github:thro42/i2c_motor_driver#master"
+  },
+  "files": ["README.md", "main.blocks", "main.ts"],
+  "testFiles": ["test.ts"],
+  "public": true,
+  "supportedTargets": ["calliope"],
+  "preferredEditor": "tsprj"
 }
