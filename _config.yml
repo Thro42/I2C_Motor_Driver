@@ -1,6 +1,6 @@
 makecode:
-  target: calliopemini
-  platform: calliopemini
+  target: calliope
+  platform: calliope
   home_url: https://makecode.calliope.cc/
 theme: jekyll-theme-slate
 include: assets
