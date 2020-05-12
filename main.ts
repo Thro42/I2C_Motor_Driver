@@ -1,7 +1,7 @@
 //% weight=10 color=#008B00 icon="\uf136"
 //% blockId=i2c_motor_shield 
 namespace i2c_motor_shield {
-export function MotorRun (chanel: number, speed: number): void {
+export function I2CmotorRun (chanel: number, speed: number): void {
     let buf = pins.createBuffer(3);
 if (speed >= 0) {
         buf[0] = 2;
