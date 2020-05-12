@@ -1,3 +1,3 @@
 input.onButtonPressed(Button.A, function () {
-    motors.MotorRun(0, 100)
+    motors.i2cMotorRun(i2cMotor.A, 100)
 })
