@@ -1,7 +1,7 @@
 //% color=#008B00
-namespace basic {
+namespace i2c_motor_shield {
     //% block
-    export function I2CmotorRun (chanel: number, speed: number): void {
+    export function MotorI2CRun (chanel: number, speed: number): void {
         let buf = pins.createBuffer(3);
         if (speed >= 0) {
                 buf[0] = 2;
