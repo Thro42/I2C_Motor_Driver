@@ -1,19 +1,3 @@
-//% color=#008B00
-namespace i2c_motor_shield {
-    //% block
-    export function MotorI2CRun (chanel: number, speed: number): void {
-        let buf = pins.createBuffer(3);
-        if (speed >= 0) {
-                buf[0] = 2;
-        } else {
-                buf[0] = 3;
-        }
-        buf[1] = chanel;
-        if (speed >= 0) {
-                buf[2] = speed;
-        } else {
-                buf[2] = speed * -1;
-        }
-        pins.i2cWriteBuffer(0x14, buf);
-    }
-}
+input.onButtonPressed(Button.A, function () {
+    motors.MotorRun(0, 100)
+})
