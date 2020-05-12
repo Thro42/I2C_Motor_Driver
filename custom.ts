@@ -4,8 +4,8 @@ enum i2cMotor {
     //% blockId="ApB" block="A+B"
     AB = 3,
 }
-//% color="#008272"
-namespace motors {
+//% color="#008272"weight=100 icon="\uf1b9" block="I2C Motor Shield"
+namespace i2cmotors {
 //% block="I2C Motor %i2cMotor|run %n"
     export function i2cMotorRun (chanel: i2cMotor, speed: number): void {
         let buf = pins.createBuffer(3);

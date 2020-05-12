@@ -1,3 +1,1 @@
-input.onButtonPressed(Button.A, function () {
-    motors.i2cMotorRun(i2cMotor.A, 100)
-})
+i2cmotors.i2cMotorRun(i2cMotor.A, 0)
