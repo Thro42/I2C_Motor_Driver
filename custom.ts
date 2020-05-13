@@ -1,3 +1,4 @@
+//% emitAsConstant
 enum i2cMotor {
     A = 1,
     B = 2,
@@ -6,6 +7,7 @@ enum i2cMotor {
 }
 //% color="#008272"weight=100 icon="\uf1b9" block="I2C Motor Shield"
 namespace i2cmotors {
+//% blockId=i2c_motor_run
 //% block="I2C Motor %i2cMotor|run %n"
     export function i2cMotorRun (chanel: i2cMotor, speed: number): void {
         let buf = pins.createBuffer(3);
@@ -37,8 +39,8 @@ namespace i2cmotors {
         }
         
     }
-
-    //% block="I2C Motor %i2cMotor|stop"
+//% blockId=i2c_motor_stop
+//% block="I2C Motor %i2cMotor|stop"
     export function i2cMotorStop (chanel: i2cMotor ): void {
         let buf = pins.createBuffer(2);
          buf[0] = 0;

@@ -5,7 +5,8 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "i2c_motor_driver": "github:thro42/i2c_motor_driver#master"
+        "i2c_motor_driver": "github:thro42/i2c_motor_driver#master",
+        "Grove": "github:calliope-edu/pxt-grove#v0.1.5"
     },
     "files": [
         "README.md",
