@@ -37,4 +37,26 @@ namespace i2cmotors {
         }
         
     }
+
+    //% block="I2C Motor %i2cMotor|stop"
+    export function i2cMotorStop (chanel: i2cMotor ): void {
+        let buf = pins.createBuffer(2);
+         buf[0] = 0;
+        switch(chanel) {
+            case i2cMotor.A: {
+                buf[1] = 0;
+                pins.i2cWriteBuffer(0x14, buf);
+            }
+            case i2cMotor.B: {
+                buf[1] = 1;
+                pins.i2cWriteBuffer(0x14, buf);
+            }
+            case i2cMotor.AB: {
+                buf[1] = 0;
+                pins.i2cWriteBuffer(0x14, buf);
+                buf[1] = 1;
+                pins.i2cWriteBuffer(0x14, buf);
+            }
+        }
+    }
 }
