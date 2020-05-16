@@ -1,3 +1,6 @@
+
+//% color="#008272"weight=100 icon="\uf1b9" block="I2C Motor Shield"
+namespace i2cmotors {
 //% emitAsConstant
 enum i2cMotor {
     A = 1,
@@ -5,8 +8,7 @@ enum i2cMotor {
     //% blockId="ApB" block="A+B"
     AB = 3,
 }
-//% color="#008272"weight=100 icon="\uf1b9" block="I2C Motor Shield"
-namespace i2cmotors {
+
 //% blockId=i2c_motor_run
 //% block="I2C Motor %i2cMotor|run %n"
     export function i2cMotorRun (chanel: i2cMotor, speed: number): void {
