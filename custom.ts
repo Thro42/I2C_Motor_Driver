@@ -2,7 +2,7 @@
 //% color="#008272"weight=100 icon="\uf1b9" block="I2C Motor Shield"
 namespace i2cmotors {
 //% emitAsConstant
-enum i2cMotor {
+export enum i2cMotor {
     A = 1,
     B = 2,
     //% blockId="ApB" block="A+B"
